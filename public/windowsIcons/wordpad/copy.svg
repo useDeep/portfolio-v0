@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+  <path d="M3 5H5V6H3V5Z" fill="white"/>
+  <path d="M14 12H9V13H14V12Z" fill="white"/>
+  <path d="M14 10H9V11H14V10Z" fill="white"/>
+  <path d="M9 8H11V9H9V8Z" fill="white"/>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M1 2V12H7V15H16V8H15V7H14V6H13V5H9V4H8V3H7V2H1ZM8 5V4H7V5H8ZM7 6H6V3H2V11H7V10H3V9H7V8H3V7H7V6ZM14 7H13V8H14V7ZM15 9H12V6H8V14H15V9Z" fill="white"/>
+  <path d="M2 4H4V5H2V4Z" fill="#808080"/>
+  <path d="M13 11H8V12H13V11Z" fill="#808080"/>
+  <path d="M13 9H8V10H13V9Z" fill="#808080"/>
+  <path d="M8 7H10V8H8V7Z" fill="#808080"/>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1V11H6V14H15V7H14V6H13V5H12V4H8V3H7V2H6V1H0ZM7 4V3H6V4H7ZM6 5H5V2H1V10H6V9H2V8H6V7H2V6H6V5ZM13 6H12V7H13V6ZM14 8H11V5H7V13H14V8Z" fill="#808080"/>
+</svg>

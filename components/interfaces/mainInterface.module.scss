@@ -1,0 +1,40 @@
+.interface {
+  height: 82vh;
+  // width: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 2.37rem 2.06rem 2.37rem 2.06rem;
+  gap: 3rem;
+}
+.elementsList {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  width: 0;
+  height: 82vh;
+}
+.item {
+  display: flex;
+  width: 7rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+.icon {
+  display: flex;
+  width: 2.7rem;
+  height: 2.7rem;
+  justify-content: center;
+  align-items: center;
+}
+.text {
+  width: 9rem;
+  color: var(--mono-white, #fff);
+  text-align: center;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}

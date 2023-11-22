@@ -1,0 +1,80 @@
+.home_footer {
+  // width: 100vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  align-items: center;
+  background: var(--mono-100, #c3c3c3);
+  box-shadow: 2px 2px 0px 0px #f0f0f0 inset;
+}
+.start_button_deactive {
+  display: flex;
+  width: 7.5rem;
+  height: 3.125rem;
+  padding: 0.25rem 1rem 0.25rem 0.5rem;
+  align-items: center;
+  gap: 0.6875rem;
+  flex-shrink: 0;
+  background: var(--mono-100, #c3c3c3);
+  box-shadow: 4px 4px 0px 0px #b1b1b1 inset, -4px -4px 0px 0px #7e7e7e inset,
+    2px 2px 0px 0px #f0f0f0 inset, -2px -2px 0px 0px #262626 inset;
+  /* cursor: pointer; */
+}
+.start_button_active {
+  display: flex;
+  width: 7.5rem;
+  height: 3.125rem;
+  padding: 0.25rem 1rem 0.25rem 0.5rem;
+  align-items: center;
+  gap: 0.6875rem;
+  flex-shrink: 0;
+  background: var(--mono-50, #e3e3e3);
+  box-shadow: -4px -4px 0px 0px #b1b1b1 inset, 4px 4px 0px 0px #7e7e7e inset,
+    -2px -2px 0px 0px #f0f0f0 inset, 2px 2px 0px 0px #262626 inset;
+}
+.windows_icon {
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  margin: 0.69rem;
+}
+.start {
+  color: var(--mono-black, #000);
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.right_corner {
+  display: flex;
+  padding: 0.4rem;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.625rem;
+  background: var(--mono-100, #c3c3c3);
+  box-shadow: 2px 2px 0px 0px #7e7e7e inset, -2px -2px 0px 0px #f0f0f0 inset;
+}
+.volume {
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+.time {
+  color: var(--mono-black, #000);
+  text-align: right;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}

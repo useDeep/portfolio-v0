@@ -1,0 +1,45 @@
+.menu_item {
+  display: flex;
+  justify-content: space-between;
+  width: 16rem;
+  height: 2.7rem;
+  flex-shrink: 0;
+
+  &:hover {
+    width: 16rem;
+    height: 2.75rem;
+    flex-shrink: 0;
+    background: var(--blue-100, #000ea3);
+
+    .text {
+      color: var(--mono-white, #fff);
+    }
+    .right_icon {
+      filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg)
+        brightness(100%) contrast(100%);
+    }
+  }
+}
+.text {
+  color: var(--mono-black, #000);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: auto auto auto 1.5rem;
+}
+.line {
+  width: 16rem;
+  height: 0.125rem;
+  flex-shrink: 0;
+  background: var(--mono-white, #fff);
+}
+.right_icon {
+  display: flex;
+  width: 1.5rem;
+  height: 2rem;
+  padding: 0.4375rem 0.5rem 0.5rem 0.4375rem;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}

@@ -1,0 +1,109 @@
+// :root {
+//   --homeScreen: #008282;
+// }
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: var(--green-200, #008282);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+select {
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+*::-webkit-scrollbar {
+  width: 1rem;
+}
+*::-webkit-scrollbar-track {
+  /* //   background: url(/windowsIcons/scrollbar-checker.png) cover repeat ;
+// background-blend-mode: darken, normal; */
+
+  background-image: url(/windowsIcons/scrollbar-bg.png);
+  image-rendering: pixelated;
+}
+*::-webkit-scrollbar-thumb {
+  width: 1rem;
+  align-self: stretch;
+  background: var(--grey-grey, #c0c0c0);
+
+  /* outside/2 */
+  box-shadow: 2px 2px 0px 0px #dfdfdf inset, -2px -2px 0px 0px #7f7f7f inset,
+    1px 1px 0px 0px #fff inset, -1px -1px 0px 0px #000 inset;
+}
+
+*::-webkit-scrollbar-button {
+  background-repeat: no-repeat;
+  background-size: 16px;
+  display: flex;
+  width: 1rem;
+  height: 1rem;
+  padding: 0.125rem;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background: var(--grey-grey, #c0c0c0);
+
+  /* outside/2 */
+  box-shadow: 2px 2px 0px 0px #dfdfdf inset, -2px -2px 0px 0px #7f7f7f inset,
+    1px 1px 0px 0px #fff inset, -1px -1px 0px 0px #000 inset;
+
+  &:active {
+    background: var(--grey-grey, #c0c0c0);
+
+    /* outside/2 */
+    box-shadow: 2px 2px 0px 0px #7f7f7f inset, -2px -2px 0px 0px #dfdfdf inset,
+      1px 1px 0px 0px #fff inset, -1px -1px 0px 0px #000 inset;
+  }
+}
+
+*::-webkit-scrollbar-button:single-button:vertical:decrement {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTAuNSAxNiAxNiIgc2hhcGUtcmVuZGVyaW5nPSJjcmlzcEVkZ2VzIj4KPG1ldGFkYXRhPk1hZGUgd2l0aCBQaXhlbHMgdG8gU3ZnIGh0dHBzOi8vY29kZXBlbi5pby9zaHNoYXcvcGVuL1hieHZOajwvbWV0YWRhdGE+CjxwYXRoIHN0cm9rZT0iIzAwMDAwMCIgZD0iTTcgNWgxTTYgNmgzTTUgN2g1TTQgOGg3IiAvPgo8L3N2Zz4=");
+}
+
+*::-webkit-scrollbar-button:single-button:vertical:increment {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTAuNSAxNiAxNiIgc2hhcGUtcmVuZGVyaW5nPSJjcmlzcEVkZ2VzIj4KPG1ldGFkYXRhPk1hZGUgd2l0aCBQaXhlbHMgdG8gU3ZnIGh0dHBzOi8vY29kZXBlbi5pby9zaHNoYXcvcGVuL1hieHZOajwvbWV0YWRhdGE+CjxwYXRoIHN0cm9rZT0iIzAwMDAwMCIgZD0iTTQgNWg3TTUgNmg1TTYgN2gzTTcgOGgxIiAvPgo8L3N2Zz4=");
+}
+
+*::-webkit-scrollbar-button:single-button:horizontal:decrement {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTAuNSAxNiAxNiIgc2hhcGUtcmVuZGVyaW5nPSJjcmlzcEVkZ2VzIj4KPG1ldGFkYXRhPk1hZGUgd2l0aCBQaXhlbHMgdG8gU3ZnIGh0dHBzOi8vY29kZXBlbi5pby9zaHNoYXcvcGVuL1hieHZOajwvbWV0YWRhdGE+CjxwYXRoIHN0cm9rZT0iIzAwMDAwMCIgZD0iTTggM2gxTTcgNGgyTTYgNWgzTTUgNmg0TTYgN2gzTTcgOGgyTTggOWgxIiAvPgo8L3N2Zz4=");
+}
+
+*::-webkit-scrollbar-button:single-button:horizontal:increment {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTAuNSAxNiAxNiIgc2hhcGUtcmVuZGVyaW5nPSJjcmlzcEVkZ2VzIj4KPG1ldGFkYXRhPk1hZGUgd2l0aCBQaXhlbHMgdG8gU3ZnIGh0dHBzOi8vY29kZXBlbi5pby9zaHNoYXcvcGVuL1hieHZOajwvbWV0YWRhdGE+CjxwYXRoIHN0cm9rZT0iIzAwMDAwMCIgZD0iTTYgM2gxTTYgNGgyTTYgNWgzTTYgNmg0TTYgN2gzTTYgOGgyTTYgOWgxIiAvPgo8L3N2Zz4=");
+}
+
+*::-webkit-scrollbar-corner {
+  background: silver;
+}
+
+* {
+  -webkit-touch-callout: none;
+  // user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 7px solid #ccc;
+  margin: -10px 5px -5px 30px;
+  padding: 6px 10px;
+}
+
+blockquote p {
+  display: inline;
+}
