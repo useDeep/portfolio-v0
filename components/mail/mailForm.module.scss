@@ -74,3 +74,44 @@
   box-shadow: 2px 2px 0px 0px #000 inset, -2px -2px 0px 0px #c1c1c1 inset,
     1px 1px 0px 0px #808080 inset, -1px -1px 0px 0px #fff inset;
 }
+.prompt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  width: 45%;
+  min-height: 15%;
+  background: var(--mono-100, #c3c3c3);
+  box-shadow: 4px 4px 0px 0px #b1b1b1 inset, -4px -4px 0px 0px #7e7e7e inset,
+    2px 2px 0px 0px #f0f0f0 inset, -2px -2px 0px 0px #262626 inset;
+
+  .sendingGif {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .promptHead {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    .promptImg {
+      margin-left: 1rem;
+    }
+  }
+
+  .successCode {
+    color: green;
+    line-height: 1.2;
+    margin: -0.5rem 0.5rem 0.5rem 4.5rem;
+  }
+
+  .errorCode {
+    color: red;
+    overflow-wrap: break-word;
+    margin: -0.5rem 0.5rem 0.5rem 4.5rem;
+  }
+}
