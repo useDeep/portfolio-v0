@@ -104,8 +104,17 @@ const MailForm = () => {
       <form ref={form} className={styles.form} onSubmit={handleSend}>
         <div className={styles.welcome}>
           <h2>Howdy!📣</h2>
-
-          <input type="submit" className={styles.action} value="send" />
+          <div className={styles.action}>
+            <button type="submit" className={styles.action}>
+              <Image
+                src="/windowsIcons/send.png"
+                alt="send"
+                width={30}
+                height={30}
+              />
+              <span>Send</span>
+            </button>
+          </div>
         </div>
         <div className={styles.formElement}>
           <label htmlFor="from">From</label>

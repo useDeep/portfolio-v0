@@ -13,6 +13,7 @@
   flex-shrink: 0;
   display: flex;
   justify-content: center;
+  gap: 0.7rem;
   align-items: center;
   font-family: inherit;
 
@@ -64,13 +65,13 @@
       1px 1px 0px 0px #808080 inset, -1px -1px 0px 0px #fff inset;
   }
 }
-.to::placeholder{
-    background-color: #e3e3e3;
-    color: #595858;
-    width: min-content;
-    padding: 0.14rem 0.5rem;
-    border-radius: 10px;
-  }
+.to::placeholder {
+  background-color: #e3e3e3;
+  color: #595858;
+  width: min-content;
+  padding: 0.14rem 0.5rem;
+  border-radius: 10px;
+}
 
 .message {
   height: 15rem;
