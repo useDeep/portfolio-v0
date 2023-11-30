@@ -64,6 +64,14 @@
       1px 1px 0px 0px #808080 inset, -1px -1px 0px 0px #fff inset;
   }
 }
+.to::placeholder{
+    background-color: #e3e3e3;
+    color: #595858;
+    width: min-content;
+    padding: 0.14rem 0.5rem;
+    border-radius: 10px;
+  }
+
 .message {
   height: 15rem;
   margin-top: 1rem;

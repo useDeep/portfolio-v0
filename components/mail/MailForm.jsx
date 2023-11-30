@@ -62,7 +62,9 @@ const Prompt = ({ status, errorMessage }) => {
 const MailForm = () => {
   const [showPrompt, setShowPrompt] = useState(false);
   const [status, setStatus] = useState();
-  const [errorMessage, setErrorMessage] = useState("o! oh! somehting went wrong");
+  const [errorMessage, setErrorMessage] = useState(
+    "o! oh! somehting went wrong"
+  );
   const form = useRef();
 
   const handleSend = (e) => {
@@ -103,7 +105,7 @@ const MailForm = () => {
         <div className={styles.welcome}>
           <h2>Howdy!📣</h2>
 
-          <input type="submit" className={styles.action} />
+          <input type="submit" className={styles.action} value="send" />
         </div>
         <div className={styles.formElement}>
           <label htmlFor="from">From</label>
@@ -111,7 +113,13 @@ const MailForm = () => {
         </div>
         <div className={styles.formElement}>
           <label htmlFor="to">To</label>
-          <input type="email" id="to" placeholder="Deepak" disabled />
+          <input
+            type="email"
+            id="to"
+            className={styles.to}
+            placeholder="hey.usedeep@gmail.com"
+            disabled
+          />
         </div>
         <div className={styles.formElement}>
           <label htmlFor="subject"></label>

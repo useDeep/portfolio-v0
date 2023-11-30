@@ -79,7 +79,7 @@ const FileManager = ({ data, showFileManager, setShowFileManager }) => {
                   width={50}
                 />
               </button>
-              <button className={styles.button}>
+              {/* <button className={styles.button}>
                 <Image
                   className={styles.buttonIcon}
                   // onClick={handleMaximize}
@@ -88,7 +88,7 @@ const FileManager = ({ data, showFileManager, setShowFileManager }) => {
                   height={50}
                   width={50}
                 />
-              </button>
+              </button> */}
               <button className={styles.button} onClick={handleClose}>
                 <Image
                   className={styles.buttonIcon}

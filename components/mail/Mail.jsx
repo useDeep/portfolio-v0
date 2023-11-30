@@ -40,7 +40,7 @@ const Mail = ({ setActiveMail }) => {
                 width={50}
               />
             </button>
-            <button className={styles.button}>
+            {/* <button className={styles.button}>
               <Image
                 className={styles.buttonIcon}
                 // onClick={handleMaximize}
@@ -49,7 +49,7 @@ const Mail = ({ setActiveMail }) => {
                 height={50}
                 width={50}
               />
-            </button>
+            </button> */}
             <button className={styles.button} onClick={handleClose}>
               <Image
                 className={styles.buttonIcon}
