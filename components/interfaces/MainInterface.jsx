@@ -9,6 +9,7 @@ import RickRoll from "../misc/RickRoll";
 import Draggable from "react-draggable";
 import Mail from "../mail/Mail";
 import FileManager from "../fileManager/FileManager";
+import ResumePDF from "../../public/resume.pdf"
 
 const MainInterface = () => {
   const [activeWordpad, setActiveWordpad] = useState([]);
@@ -16,6 +17,18 @@ const MainInterface = () => {
   const [activeMail, setActiveMail] = useState(false);
   const [showFileManager, setShowFileManager] = useState([]);
   const [isRickRolled, setIsRickRolled] = useState(false);
+
+  const downloadResume= () =>{
+    const pdfUrl= ResumePDF
+    const link= document.createElement("a")
+    link.href= pdfUrl
+    link.download= "Deepak-Resume"
+    link.target= "_blank"
+    link.rel="noopener noreferrer"
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
 
   const selectApp = (item) => {
     switch (item.id) {
@@ -55,6 +68,10 @@ const MainInterface = () => {
         }
       case "xxxvids":
         setIsRickRolled(true);
+        break
+      case "resume":
+        downloadResume()
+        break
       default:
         console.log("something went wrong");
     }
