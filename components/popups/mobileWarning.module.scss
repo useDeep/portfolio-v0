@@ -1,0 +1,51 @@
+.popup {
+  display: flex;
+  z-index: 1000;
+  height: 100vh;
+}
+
+.warn {
+  margin: auto;
+  transform: translateY(-25%);
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+  .steve {
+    width: 110%;
+    height: 110%;
+    z-index: 10;
+  }
+  .textbox {
+    background-color: white;
+    display: inline-block;
+    width: 95%;
+    margin-top: -12%;
+    z-index: 10;
+    background: var(--mono-50, #e3e3e3);
+    box-shadow: -4px -4px 0px 0px #b1b1b1 inset, 4px 4px 0px 0px #7e7e7e inset,
+      -2px -2px 0px 0px #f0f0f0 inset, 2px 2px 0px 0px #262626 inset;
+
+    .close {
+      margin: -3% 1% 1% auto;
+      padding: 0.5rem;
+      float: right;
+      font-size: 1.5rem;
+      background: var(--mono-100, #c3c3c3);
+      box-shadow: 4px 4px 0px 0px #b1b1b1 inset, -4px -4px 0px 0px #7e7e7e inset,
+        2px 2px 0px 0px #f0f0f0 inset, -2px -2px 0px 0px #262626 inset;
+    }
+    .message {
+      margin: 1rem;
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+
+      span {
+        background-color: yellow;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
