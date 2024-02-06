@@ -33,6 +33,7 @@ const FileManager = ({ data, showFileManager, setShowFileManager }) => {
         key={file}
         className={styles.fileItem}
         onDoubleClick={() => handleOpenFile(file.match(/\d+/))}
+        onTouchStart={() => handleOpenFile(file.match(/\d+/))}
       >
         <Image
           src={path}

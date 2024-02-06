@@ -93,6 +93,7 @@ const MainInterface = () => {
               key={item.id}
               className={`${styles.item} handle`}
               onDoubleClick={() => selectApp(item)}
+              onTouchStart={() => selectApp(item)}
             >
               <Image
                 className={styles.icon}

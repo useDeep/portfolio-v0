@@ -22,6 +22,7 @@ const Gallery = ({ fileInfo, topic, currentFile, setOpenGallery }) => {
       key={pointer}
       className={styles.content}
       onDoubleClick={() => handleOpenFile(file)}
+      onTouchStart={() => handleOpenFile(file)}
     >
       <Image
         src={`/${topic}/${fileInfo.target} (${pointer}).jpeg`}
