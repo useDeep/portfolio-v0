@@ -1,5 +1,6 @@
 import './globals.scss'
 import localFont from 'next/font/local'
+import { Analytics } from '@vercel/analytics/react';
 
 const myFont = localFont({
   src: './w95fa.woff2',
@@ -13,7 +14,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={myFont.className}>
-      <body >{children}</body>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }
