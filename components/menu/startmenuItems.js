@@ -1,7 +1,7 @@
 export const startmenuItems = [
     {
         id: "programs",
-        name: "Progams",
+        name: "Programs",
         icon: "/windowsIcons/programs.png",
         options: true,
     },
