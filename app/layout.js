@@ -1,6 +1,7 @@
 import './globals.scss'
 import localFont from 'next/font/local'
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const myFont = localFont({
   src: './w95fa.woff2',
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
       <body>
         {children}
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )
