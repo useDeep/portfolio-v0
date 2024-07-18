@@ -103,7 +103,7 @@ const MailForm = () => {
     <>
       <form ref={form} className={styles.form} onSubmit={handleSend}>
         <div className={styles.welcome}>
-          <h2>Howdy!📣</h2>
+          <h2>Howdy! 📣</h2>
           <div className={styles.action}>
             <button type="submit" className={styles.action}>
               <Image
@@ -142,7 +142,7 @@ const MailForm = () => {
         <textarea
           className={styles.message}
           name="message"
-          placeholder={`don't say nasty things like Deez nuts. Be a good son/daughter of your parents. Say "You'r hired" instead -- Thank you`}
+          placeholder={`Write nice words, like: "You'r hired 🤝"`}
           required
         ></textarea>
       </form>
